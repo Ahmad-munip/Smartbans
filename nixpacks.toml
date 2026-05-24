@@ -1,0 +1,7 @@
+# nixpacks.toml
+# Konfigurasi Nixpacks untuk deployment Laravel di Railway
+
+[phases.predeploy]
+cmds = [
+    "php artisan migrate --force"
+]
